@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+.zapros{
+    width: 100%;
+    height: 30px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#poisk{
+    width: 40%;
+    height: 30px;
+    border: 2px solid rgb(99, 15, 225);
+    border-radius: 5px;
+}
+select{
+    width: 10%;
+    height: 35px;
+    background-color: rgb(99, 15, 225);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(99, 15, 225);
+}
+button{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(99, 15, 225);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(99, 15, 225);
+}
