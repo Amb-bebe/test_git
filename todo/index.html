@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Todo List</title>
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
@@ -12,19 +12,45 @@
     </h1>
     <form>
         <div class="zapros">
-            <input type="text" name="poisk" id="poisk">
+             <div class="search">
+                <input type="text" name="poisk" id="poisk" placeholder ="Search note...">
+                <button class="lupa"></div>
             <select>
                 <option value="all">ALL</option>
                 <option value="not at all">NOT AT ALL</option>
             </select>
-            <button>тип луна</button>
+            <button class="luna"></button>
         </div>
-        <input type="checkbox" class="note" name="note">
-        <label for = "note">NOTE #1</label>
-        <input type="checkbox" class="note" name="note">
-        <label for = "note">NOTE #2</label>
-        <input type="checkbox" class="note" name="note">
-        <label for = "note">NOTE #3</label>
+        <div class="spisok">
+            <div class="krasota">
+                <input type="checkbox" class="note" name="note">
+                <label for="noti" class= "text">NOTE #1</label>
+                <div class="buttons">
+                    <button class="frame"></button>
+                    <button class="trash"></button>
+                </div> 
+            </div>
+            <hr>
+            <div class="krasota">
+                <input type="checkbox" class="note" name="note">
+                <label for="noti" class= "text">NOTE #2</label>
+                <div class="buttons">
+                    <button class="frame"></button>
+                    <button class="trash"></button>
+                </div> 
+            </div>
+            <hr>
+            <div class="krasota">
+                <input type="checkbox" class="note" name="note">
+                <label for="noti" class= "text">NOTE #3</label>
+                <div class="buttons">
+                    <button class="frame"></button>
+                    <button class="trash"></button>
+                </div> 
+            </div>
+        </div>
     </form>
+    <button class="add"></button>
+    <div class="by"></div>
 </body>
 </html>
