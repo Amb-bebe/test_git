@@ -6,13 +6,13 @@
     <title>Todo List</title>
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
-<body>
+<body class="light-tem">
     <h1>
         TODO LIST
     </h1>
     <form>
         <div class="zapros">
-             <div class="search">
+             <div id ="search" class="search">
                 <input type="text" name="poisk" id="poisk" placeholder ="Search note...">
                 <button class="lupa"></div>
             <select>
@@ -24,7 +24,7 @@
         <div class="spisok">
             <div class="krasota">
                 <input type="checkbox" class="note" name="note">
-                <label for="noti" class= "text">NOTE #1</label>
+                <label class= "text">NOTE #1</label>
                 <div class="buttons">
                     <button class="frame"></button>
                     <button class="trash"></button>
@@ -33,7 +33,7 @@
             <hr>
             <div class="krasota">
                 <input type="checkbox" class="note" name="note">
-                <label for="noti" class= "text">NOTE #2</label>
+                <label class= "text">NOTE #2</label>
                 <div class="buttons">
                     <button class="frame"></button>
                     <button class="trash"></button>
@@ -42,7 +42,7 @@
             <hr>
             <div class="krasota">
                 <input type="checkbox" class="note" name="note">
-                <label for="noti" class= "text">NOTE #3</label>
+                <label class= "text">NOTE #3</label>
                 <div class="buttons">
                     <button class="frame"></button>
                     <button class="trash"></button>
@@ -50,7 +50,12 @@
             </div>
         </div>
     </form>
-    <button class="add"></button>
+    <button id="add"></button>
+    <div id = "win" class="windoww">
+        <button id="closed"></button>
+        <input type="text" name="name_note" id="name_note" placeholder ="Name note">
+
+    </div>
     <div class="by"></div>
     <script src="js.js"></script>
 </body>
