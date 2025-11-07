@@ -31,7 +31,7 @@ h1{
     transition: 0.5s;
 }
 
-#poisk{
+.poisk{
      width: 90%;
      height: 30px;
      border: none;
@@ -42,9 +42,10 @@ h1{
      color: #4942cd;
      background-color: rgba(255, 255, 255, 0);
 }
-input::placeholder{
+.poisk::placeholder{
     color:#6C63FF;
     opacity: 0.5;
+    transition: 0.5s;
 }
 .lupa{
     width: 10%;
@@ -74,11 +75,17 @@ select{
     color: white;
     border-radius: 5px;
     border: 2px solid #6C63FF;
-    background-image: url("luna.svg");
-    background-repeat: no-repeat;
-    background-size: 27px;
-    background-position: 7px;
     cursor: pointer;
+    position: relative;
+}
+.luna{
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+.soli{
+    opacity: 0;
+    transition: 0.5s;
 }
 .spisok{
     width: 100%;
@@ -190,17 +197,21 @@ hr{
     width: 100%;
 }
 .windoww{
-    width: 60vw;
-    height: 20vh;
+    width: 50vw;
+    height: 60vh;
     background-color: white;
     position: fixed;
-    bottom: 50%;
-    left: 20%;
+    bottom: 25%;
+    left: 25%;
     z-index: 10;
     border: 2px solid #6C63FF;
     border-radius: 5px;
     display: none;
     transition: 0.5s;
+}
+.wini {
+    position: absolute;
+    left: 37%;
 }
 #name_note{
     width: 50%;
@@ -210,7 +221,7 @@ hr{
      font-size: 20px;
      text-indent: 3%;
      outline: none;
-     padding-top: 5px;
+     padding-top: 10%;
      color: #4942cd;
      position: absolute;
      left: 25%;
@@ -218,16 +229,44 @@ hr{
      top: 40px;
      background-color: #00000000;
 }
+.name_note::placeholder{
+    color: #6C63FF;
+    opacity: 0.5;
+}
 #closed{
-    width: 4vw;
-    height: 5vh;
+    width: 15vw;
+    height: 8vh;
+    font-size: 20px;
+    background-color: #00000000;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    border-radius: 5px;
+    border: 2px solid #4942cd;
+    color: #4942cd;
+}
+#apply{
+    width: 15vw;
+    height: 8vh;
+    font-size: 20px;
     background-color: #4942cd;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 70%;
+    left: 60%;
     border-radius: 5px;
+    border: 2px solid #4942cd;
+    color: #f5f4ff;
 }
-
+#temno{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    bottom: 0%;
+    z-index: 10;
+    opacity: 0.5;
+    display: none;
+}
 
  body.light-tem{
     background-color: white;
@@ -236,30 +275,56 @@ hr{
 }
 body.dark-tem{
     background-color: rgb(23, 0, 71);
-    color:#7a73ff;
+    color:#edecff;
     transition: 0.5s;
 }
 .searchdark{
     width: 40%;
     height: 40px;
-    border: 2px solid #6C63FF;
+    border: 2px solid #edecff;
     border-radius: 5px;
     display: flex;
     flex-wrap: nowrap;
     background-color: rgb(23, 0, 71);
     transition: 0.5s;
 }
+.poiskdark{
+     width: 90%;
+     height: 30px;
+     border: none;
+     font-size: 20px;
+     text-indent: 3%;
+     outline: none;
+     padding-top: 5px;
+     color: #edecff;
+     background-color: rgba(255, 255, 255, 0);
+}
+.poiskdark::placeholder{
+    color: #edecff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
 .windowwdark{
-    width: 60vw;
-    height: 20vh;
+    width: 50vw;
+    height: 60vh;
     background-color: rgb(23, 0, 71);
     position: fixed;
-    bottom: 50%;
-    left: 20%;
+    bottom: 25%;
+    left: 25%;
     z-index: 10;
-    border: 2px solid #6C63FF;
+    border: 2px solid #edecff;
     border-radius: 5px;
     display: none;
+    transition: 0.5s;
+}
+.lunadark{
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.soldark{
+    position: absolute;
+    opacity: 1;
     transition: 0.5s;
 }
 
