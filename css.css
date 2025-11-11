@@ -94,31 +94,25 @@ select{
     flex-direction: column;
     align-items: center;
 }
-.krasota{
-    position: relative;
-    width: 30%;
-    display: flex;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
 .note{
     appearance: none;
-    position: absolute;
-    left: -50px;
-    top: 5px;
     border: 0.5px solid #6C63FF;
     border-radius: 5px;
     width: 30px;
     height: 30px;
     cursor: pointer;
     transition: 0.6s;
+    display: block;
+    margin-top: 2.5%;
+    
 }
 .text{
+    margin-left: 15%;
     font-size: 30px;
     transition: 0.6s;
+    margin-left: -0.1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .note:checked{
     accent-color: #6C63FF;
@@ -131,18 +125,30 @@ select{
     opacity: 0.5;
     text-decoration: line-through;
 }
+#zamet{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100px;
+   
+}
+#zamet label{
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #6C63FF;
+    
+}
 .buttons{
     position: absolute;
-    display: flex;
-    align-items: center;
-    left: -2%;
     width: 85px;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
+    height: 35px;
     opacity: 0;
-    padding-left: 95%;
+    padding-left: 80%;
     transition: 0.5s;
+    z-index: 9;
+    left: 6%;
+    background-color: #00000000;
 }
  .buttons:hover{
     opacity: 1;
@@ -160,6 +166,8 @@ select{
     background-size: 100%;
     background-color: rgba(240, 248, 255, 0);
     cursor: pointer;
+    position: absolute;
+    right: 3.5%;
 }
 .trash{
     width: 30px;
@@ -169,13 +177,16 @@ select{
     background-size: 100%;
     background-color: rgba(240, 248, 255, 0);
     cursor: pointer;
+    position: absolute;
 }
 hr{
-    width: 36%;
+    width: 90%;
     height: 1px;
     color: #6C63FF;
     background-color: #6C63FF;
     border: none;
+    position: absolute;
+    left: 0;
 }
 #add{
     position: fixed;
@@ -191,6 +202,7 @@ hr{
     background-size: 30px;
     background-position: 15px 15px;
     cursor: pointer;
+    z-index: 9;
 }
 .by{
     height: 500px;

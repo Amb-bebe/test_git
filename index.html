@@ -17,7 +17,8 @@
                 <button class="lupa"></div>
             <select>
                 <option value="all">ALL</option>
-                <option value="not at all">NOT AT ALL</option>
+                <option value="not at cheked">NOT AT CHECKED</option>
+                <option value="cheked">CHECKED</option>
             </select>
             <button id="luna">
                 <svg id = 'luni' class="luna" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 22 22" fill="none">
@@ -28,34 +29,6 @@
                 </svg>
             </button>
         </div>
-        <div class="spisok">
-            <div class="krasota">
-                <input type="checkbox" class="note" name="note">
-                <label class= "text">NOTE #1</label>
-                <div class="buttons">
-                    <button class="frame"></button>
-                    <button class="trash"></button>
-                </div> 
-            </div>
-            <hr>
-            <div class="krasota">
-                <input type="checkbox" class="note" name="note">
-                <label class= "text">NOTE #2</label>
-                <div class="buttons">
-                    <button class="frame"></button>
-                    <button class="trash"></button>
-                </div> 
-            </div>
-            <hr>
-            <div class="krasota">
-                <input type="checkbox" class="note" name="note">
-                <label class= "text">NOTE #3</label>
-                <div class="buttons">
-                    <button class="frame"></button>
-                    <button class="trash"></button>
-                </div> 
-            </div>
-        </div>
     </form>
     <button id="add"></button>
     <div id="temno"></div>
@@ -64,6 +37,9 @@
         <input type="text" name="name_note" id="name_note" class="name_note" placeholder ="Name note">
         <button id="closed">CANCEL</button>
         <button id="apply">APPLY</button>
+    </div>
+    <div class="spisok">
+            <div id ="zamet"></div>
     </div>
     <div class="by"></div>
     <script src="js.js"></script>
